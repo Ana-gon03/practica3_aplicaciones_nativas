@@ -1,85 +1,279 @@
-### Practica3 Alicaciones Nativas
+# 📁 Gestor de Archivos - Aplicación Móvil Nativa
 
-Este proyecto es una aplicación **nativa para Android** desarrollada en **Kotlin**.  
-La idea principal es crear un **gestor de archivos completo y moderno**, que permita explorar, visualizar y administrar carpetas y archivos del almacenamiento interno y externo del dispositivo.  
+## 📋 Descripción
 
-## ✨ Funcionalidades que tendrá
+**Gestor de Archivos** es una aplicación móvil nativa para Android desarrollada con Flutter que permite explorar, gestionar y visualizar archivos del dispositivo de manera eficiente y elegante. La aplicación ofrece acceso completo al almacenamiento interno y externo, con características avanzadas de búsqueda, filtrado y gestión de archivos.
 
-- Explorar carpetas y archivos de la memoria del teléfono  
-- Mostrar la estructura de carpetas de forma jerárquica  
-- Ver información como nombre, tamaño, tipo y fecha de modificación  
-- Abrir archivos de texto (.txt, .json, .xml, .log, .md)  
-- Visualizar imágenes con opciones de zoom, rotación y desplazamiento  
-- Usar **intents** para abrir archivos con otras apps  
-- Crear, renombrar, mover, copiar o eliminar archivos  
-- Buscar archivos por nombre, tipo o fecha  
-- Tener un historial de archivos recientes y un sistema de favoritos
+### 🎯 Características Principales
 
-## 🎨 Interfaz y Temas
+#### 🗂️ Exploración de Archivos
+- ✅ Acceso a almacenamiento interno y externo
+- ✅ Navegación jerárquica con breadcrumbs
+- ✅ Vista de lista y cuadrícula
+- ✅ Información detallada de archivos (tamaño, fecha, tipo)
+- ✅ Iconos diferenciados por tipo de archivo
 
-La aplicación tendrá dos temas principales inspirados en el **IPN** y **ESCOM**:
+#### 🔍 Búsqueda Avanzada
+- ✅ Búsqueda recursiva en carpetas y subcarpetas
+- ✅ Búsqueda rápida en carpeta actual
+- ✅ Filtros por tipo de archivo:
+  - Imágenes (JPG, PNG, GIF, WebP)
+  - Documentos de texto (TXT, MD, JSON, XML)
+  - Videos (MP4, AVI, MKV)
+  - Audio (MP3, WAV, FLAC)
+- ✅ Filtros por fecha:
+  - Modificados hoy
+  - Modificados esta semana (últimos 7 días)
+- ✅ Contador de resultados en tiempo real
 
-| Tema | Color principal |
-|:------|:----------------|
-| 💜 Guinda (IPN) | `#6B2E5F` |
-| 💙 Azul (ESCOM) | `#003D6D` |
+#### 📄 Visualización de Contenido
+- ✅ **Visor de texto**: Archivos TXT, MD, LOG, JSON, XML
+  - Control de tamaño de fuente
+  - Texto seleccionable
+  - Fuente monoespaciada para código
+- ✅ **Visor de imágenes**: JPG, PNG, GIF, BMP, WebP
+  - Zoom y desplazamiento
+  - Rotación de imágenes
+  - Fondo negro para mejor visualización
+- ✅ **Apertura con aplicaciones externas**: Otros tipos de archivo
 
-Además, se adaptará automáticamente al modo claro u oscuro del sistema.  
+#### 🛠️ Gestión de Archivos
+- ✅ Crear carpetas nuevas
+- ✅ Renombrar archivos y carpetas
+- ✅ Copiar archivos/carpetas
+- ✅ Mover archivos/carpetas
+- ✅ Eliminar con confirmación
+- ✅ Información detallada del archivo
 
+#### ⭐ Sistema de Favoritos
+- ✅ Marcar archivos y carpetas como favoritos
+- ✅ Acceso rápido desde pestaña dedicada
+- ✅ Almacenamiento persistente
+- ✅ Detección de archivos eliminados
 
----
+#### 🕐 Historial de Archivos Recientes
+- ✅ Registro automático de archivos abiertos
+- ✅ Límite de 20 archivos recientes
+- ✅ Deslizar para eliminar del historial
+- ✅ Información de tamaño y fecha
 
-## 📋 Estado del Proyecto
+#### 🎨 Temas Personalizables
+- ✅ **Tema IPN Guinda** (#6B2E5F)
+- ✅ **Tema ESCOM Azul** (#003D6D)
+- ✅ Modo claro y oscuro para cada tema
+- ✅ Adaptación automática al tema del sistema
+- ✅ Persistencia de preferencias
 
-| Archivo | Estado | Descripción |
-|:--------|:--------|:-------------|
-| 🏠 `MainActivity.kt` | ✅ Listo | Pantalla principal con la lista de archivos |
-| 📄 `FileItem.kt` | ✅ Listo | Modelo de datos para representar un archivo o carpeta |
-| 🧱 Layouts base (`activity_main.xml`, `item_file.xml`) | ✅ Listos | Estructura inicial de la interfaz |
-| 🧩 `FileAdapter.kt` | 🔧 En proceso | Adaptador para el RecyclerView |
-| 🖼 `ImageViewerActivity.kt` | 🚧 Pendiente | Para visualizar imágenes |
-| 📘 `FileViewerActivity.kt` | 🚧 Pendiente | Para visualizar archivos de texto |
-| ⚙️ `PermissionUtils.kt` / `FileUtils.kt` | 🚧 Pendiente | Manejo de permisos y utilidades |
-
----
-
-## 💾 Funcionalidades de almacenamiento
-
-- Guardar favoritos de usuario (archivos o carpetas más usados)  
-- Mantener un historial de archivos recientes  
-- Generar caché de miniaturas para optimizar el rendimiento  
-
-El almacenamiento se hará usando **Room**, **SharedPreferences** o **DataStore**, según la función.
-
----
-
-## 🔐 Permisos y seguridad
-
-Estoy implementando correctamente los permisos de lectura/escritura según la versión de Android,  
-usando **Scoped Storage** para Android 10 o superior y manejando excepciones en rutas restringidas o archivos corruptos.
-
----
-
-## 🧠 Tecnologías utilizadas
-
-- **Lenguaje:** Kotlin  
-- **IDE:** Android Studio  
-- **Arquitectura:** MVVM (para mantener el código ordenado)  
-- **UI:** Material Design Components  
-- **Compatibilidad:** Android 10 (API 29) o superior  
-
----
-
-## 🚀 Próximos pasos
-
-- Terminar el adaptador de archivos  
-- Agregar el visor de imágenes y archivos de texto  
-- Implementar los temas dinámicos  
-- Añadir el sistema de favoritos y recientes  
-- Probar el manejo de permisos y almacenamiento externo  
- 
+#### 🔒 Permisos y Seguridad
+- ✅ Gestión inteligente de permisos según versión Android
+- ✅ Soporte para Scoped Storage (Android 10+)
+- ✅ Permisos granulares (Android 13+)
+- ✅ Manejo de excepciones robusto
+- ✅ Respeto a restricciones de seguridad
 
 ---
 
-📱 *Proyecto en desarrollo — versión inicial 0.1*  
+## 🚀 Instalación y Configuración
 
+### Requisitos Previos
+
+- **Flutter SDK**: >= 3.0.0
+- **Dart SDK**: >= 3.0.0
+- **Android Studio** o **VS Code** con extensiones de Flutter
+- **Dispositivo Android** o **Emulador** (API 21+)
+
+### Pasos de Instalación
+
+1. **Clonar el repositorio**
+   ```bash
+   git clone https://github.com/tu-usuario/gestor-archivos.git
+   cd gestor-archivos
+   ```
+
+2. **Instalar dependencias**
+   ```bash
+   flutter pub get
+   ```
+
+3. **Verificar dispositivos conectados**
+   ```bash
+   flutter devices
+   ```
+
+4. **Ejecutar la aplicación**
+   ```bash
+   flutter run
+   ```
+
+5. **Compilar APK para producción**
+   ```bash
+   flutter build apk --release
+   ```
+
+---
+
+## 📦 Dependencias
+
+### Principales
+```yaml
+provider: ^6.1.1              # Gestión de estado
+path_provider: ^2.1.1         # Acceso a rutas del sistema
+path: ^1.8.3                  # Manipulación de rutas
+shared_preferences: ^2.2.2    # Almacenamiento local
+permission_handler: ^11.1.0   # Gestión de permisos
+photo_view: ^0.14.0          # Visor de imágenes con zoom
+open_filex: ^4.3.4           # Apertura de archivos externos
+intl: ^0.18.1                # Internacionalización
+mime: ^1.0.4                 # Detección de tipos MIME
+```
+
+---
+
+## 🏗️ Arquitectura del Proyecto
+
+### Estructura de Carpetas
+
+```
+lib/
+├── main.dart                    # Punto de entrada
+├── app.dart                     # Configuración principal
+├── config/
+│   ├── themes/
+│   │   ├── app_theme.dart      # Definición de temas
+│   │   └── theme_provider.dart # Provider de temas
+│   └── constants/
+│       └── app_constants.dart  # Constantes globales
+├── models/
+│   ├── file_item.dart          # Modelo de archivo/carpeta
+│   └── favorite_item.dart      # Modelo de favorito
+├── services/
+│   ├── file_service.dart       # Operaciones de archivos
+│   ├── storage_service.dart    # Gestión de almacenamiento
+│   └── permission_service.dart # Gestión de permisos
+├── providers/
+│   ├── file_provider.dart      # Estado de explorador
+│   ├── favorites_provider.dart # Estado de favoritos
+│   └── recent_files_provider.dart # Estado de recientes
+├── screens/
+│   ├── home_screen.dart        # Pantalla principal
+│   ├── file_explorer_screen.dart # Explorador de archivos
+│   ├── text_viewer_screen.dart   # Visor de texto
+│   ├── image_viewer_screen.dart  # Visor de imágenes
+│   ├── favorites_screen.dart     # Pantalla de favoritos
+│   └── recent_files_screen.dart  # Pantalla de recientes
+└── widgets/
+    ├── file_item_widget.dart   # Widget de archivo
+    ├── breadcrumb_widget.dart  # Navegación breadcrumb
+    ├── empty_state_widget.dart # Estado vacío
+    └── permission_dialog.dart  # Diálogo de permisos
+```
+---
+
+## 🎨 Temas y Diseño
+
+### Colores IPN Guinda
+
+| Elemento | Claro | Oscuro |
+|----------|-------|--------|
+| Primario | #6B2E5F | #8B4E7F |
+| Secundario | #8B4E7F | #6B2E5F |
+| Fondo | #FFFFFF | #121212 |
+| Superficie | #FFFFFF | #1E1E1E |
+
+### Colores ESCOM Azul
+
+| Elemento | Claro | Oscuro |
+|----------|-------|--------|
+| Primario | #003D6D | #005D9D |
+| Secundario | #005D9D | #003D6D |
+| Fondo | #FFFFFF | #121212 |
+| Superficie | #FFFFFF | #1E1E1E |
+
+---
+
+## 📱 Capturas de Pantalla
+
+### Pantalla Principal
+- Explorador de archivos con vista de lista/cuadrícula
+- Barra de navegación con breadcrumbs
+- Acceso rápido a favoritos y recientes
+
+### Búsqueda Avanzada
+- Campo de búsqueda con sugerencias
+- Filtros por tipo y fecha
+- Resultados en tiempo real
+
+### Visores
+- Visor de texto con ajuste de fuente
+- Visor de imágenes con zoom y rotación
+
+### Gestión de Archivos
+- Opciones contextuales (copiar, mover, eliminar)
+- Diálogos de confirmación
+- Mensajes de retroalimentación
+
+---
+
+## 🔐 Permisos Requeridos
+
+### Android Manifest
+```xml
+<!-- Android 10 y anteriores -->
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+<!-- Android 11+ -->
+<uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+<!-- Android 13+ -->
+<uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+<uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+<uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+```
+
+### Gestión Automática
+La aplicación solicita automáticamente los permisos necesarios según la versión de Android del dispositivo.
+
+---
+
+## 📊 Características Técnicas
+
+### Compatibilidad
+- ✅ Android 5.0 (API 21) o superior
+- ✅ Soporte para diferentes tamaños de pantalla
+- ✅ Orientación vertical y horizontal
+- ✅ Adaptación a modo oscuro del sistema
+
+### Almacenamiento Local
+- ✅ SharedPreferences para favoritos y recientes
+- ✅ Persistencia de preferencias de tema
+- ✅ Sin uso de bases de datos externas
+
+---
+
+## 🐛 Solución de Problemas
+
+### La búsqueda no encuentra archivos
+1. Verifica que tengas permisos de almacenamiento
+2. Intenta usar "Solo aquí" para búsqueda en carpeta actual
+3. Revisa los logs de Flutter para más detalles
+
+### No se muestran carpetas del almacenamiento
+1. Ve a Configuración → Aplicaciones → Gestor Archivos
+2. Permisos → Archivos y multimedia
+3. Selecciona "Permitir acceso a todos los archivos"
+
+### La aplicación se cierra al abrir un archivo
+1. Asegúrate de tener una aplicación compatible instalada
+2. Verifica que el archivo no esté corrupto
+3. Revisa los permisos de la aplicación
+
+---
+
+
+
+<div align="center">
+
+
+
+</div>
