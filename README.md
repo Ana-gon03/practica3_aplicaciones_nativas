@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 📁 Gestor de Archivos - Aplicación Móvil Nativa
 
 ## 📋 Descripción
