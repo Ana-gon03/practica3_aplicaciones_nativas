@@ -172,14 +172,41 @@ lib/
 
 ## 🎨 Temas y Diseño
 
-### Colores IPN Guinda
+<div align="center">
 
-| Elemento | Claro | Oscuro |
-|----------|-------|--------|
-| Primario | #6B2E5F | #8B4E7F |
-| Secundario | #8B4E7F | #6B2E5F |
-| Fondo | #FFFFFF | #121212 |
-| Superficie | #FFFFFF | #1E1E1E |
+<h3>Colores IPN Guinda</h3>
+
+<table>
+  <tr>
+    <th>Elemento</th>
+    <th>Claro</th>
+    <th>Oscuro</th>
+  </tr>
+  <tr>
+    <td>Primario</td>
+    <td>#6B2E5F</td>
+    <td>#8B4E7F</td>
+  </tr>
+  <tr>
+    <td>Secundario</td>
+    <td>#8B4E7F</td>
+    <td>#6B2E5F</td>
+  </tr>
+  <tr>
+    <td>Fondo</td>
+    <td>#FFFFFF</td>
+    <td>#121212</td>
+  </tr>
+  <tr>
+    <td>Superficie</td>
+    <td>#FFFFFF</td>
+    <td>#1E1E1E</td>
+  </tr>
+</table>
+
+</div>
+
+
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/7600f72e-7c31-4bbf-bb71-2d8deb97b482" alt="imagen" width="400">
@@ -187,14 +214,40 @@ lib/
 
 
 
-### Colores ESCOM Azul
+<div align="center">
 
-| Elemento | Claro | Oscuro |
-|----------|-------|--------|
-| Primario | #003D6D | #005D9D |
-| Secundario | #005D9D | #003D6D |
-| Fondo | #FFFFFF | #121212 |
-| Superficie | #FFFFFF | #1E1E1E |
+<h3>Colores ESCOM Azul</h3>
+
+<table>
+  <tr>
+    <th>Elemento</th>
+    <th>Claro</th>
+    <th>Oscuro</th>
+  </tr>
+  <tr>
+    <td>Primario</td>
+    <td>#003D6D</td>
+    <td>#005D9D</td>
+  </tr>
+  <tr>
+    <td>Secundario</td>
+    <td>#005D9D</td>
+    <td>#003D6D</td>
+  </tr>
+  <tr>
+    <td>Fondo</td>
+    <td>#FFFFFF</td>
+    <td>#121212</td>
+  </tr>
+  <tr>
+    <td>Superficie</td>
+    <td>#FFFFFF</td>
+    <td>#1E1E1E</td>
+  </tr>
+</table>
+
+</div>
+
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/2d375eda-b2b5-412f-94fc-3da3b8fafc14" alt="imagen2" width="400">
@@ -204,46 +257,61 @@ lib/
 
 ## 📱 Capturas de Pantalla
 
+<div align="center">
+  
 ### Pantalla Principal
-- Explorador de archivos con vista de lista/cuadrícula
-- Barra de navegación con breadcrumbs
-- Acceso rápido a favoritos y recientes
+ - Explorador de archivos con vista de lista/cuadrícula
+ - Barra de navegación con breadcrumbs
+ - Acceso rápido a favoritos y recientes
+</div>
+ 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/d03df017-bcfb-4fb4-b9ed-923cff43c760" alt="imagen3" width="400">
 </p>
 
+<div align="center">
+
 ### Búsqueda Avanzada
-- Campo de búsqueda con sugerencias
-- Filtros por tipo y fecha
+ - Campo de búsqueda con sugerencias
+ - Filtros por tipo y fecha
+</div>
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/0293042b-5dfc-447e-b540-d2e60b301594" width="200">
   <img src="https://github.com/user-attachments/assets/4dd083a7-d7d8-4721-9013-b2b3ba19c4eb" width="200">
 </p>
 
+<div align="center">
+
 ### Favoritos y Recientes
+
+</div>
+
 <p align="center">
   <img src="https://github.com/user-attachments/assets/40536584-f776-4d69-b63b-50cf8df8eb82" width="300">
   <img src="https://github.com/user-attachments/assets/8c704318-797e-43d6-ba08-d6d81a12d583" width="300">
 </p>
 
-
+<div align="center">
 
 ### Gestión de Archivos
-- Opciones contextuales (copiar, mover, eliminar)
-- Diálogos de confirmación
-- Mensajes de retroalimentación
+ - Opciones contextuales (copiar, mover, eliminar)
+ - Diálogos de confirmación
+ - Mensajes de retroalimentación
+
+</div>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/6331f975-f10f-4d1e-a4e2-e9820a279637" alt="imagen" width="400">
 </p>
 
+<div align="center">
 
 ### Video
 
 
 https://github.com/user-attachments/assets/0137c5e9-7b96-4a0b-9363-33804d0c22f6
 
-
+</div>
 ---
 
 ## 🔐 Permisos Requeridos
