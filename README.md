@@ -5,7 +5,7 @@
 
 **Gestor de Archivos** es una aplicación móvil nativa para Android desarrollada con Flutter que permite explorar, gestionar y visualizar archivos del dispositivo de manera eficiente y elegante. La aplicación ofrece acceso completo al almacenamiento interno y externo, con características avanzadas de búsqueda, filtrado y gestión de archivos.
 
-### 🎯 Características Principales
+### Características Principales
 
 #### 🗂️ Exploración de Archivos
 - ✅ Acceso a almacenamiento interno y externo
@@ -283,47 +283,3 @@ La aplicación solicita automáticamente los permisos necesarios según la versi
 
 ---
 
-## 🐛 Solución de Problemas
-
-### La búsqueda no encuentra archivos
-1. Verifica que tengas permisos de almacenamiento
-2. Intenta usar "Solo aquí" para búsqueda en carpeta actual
-3. Revisa los logs de Flutter para más detalles
-
-### No se muestran carpetas del almacenamiento
-1. Ve a Configuración → Aplicaciones → Gestor Archivos
-2. Permisos → Archivos y multimedia
-3. Selecciona "Permitir acceso a todos los archivos"
-
-### La aplicación se cierra al abrir un archivo
-1. Asegúrate de tener una aplicación compatible instalada
-2. Verifica que el archivo no esté corrupto
-3. Revisa los permisos de la aplicación
-
----
-
-
-
-<div align="center">
-
-
-
-</div>
-=======
-# practica3_aplicaciones
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
->>>>>>> d2e8334 (practica3_aplicaciones_nativas)
