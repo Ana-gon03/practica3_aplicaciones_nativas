@@ -180,6 +180,12 @@ lib/
 | Fondo | #FFFFFF | #121212 |
 | Superficie | #FFFFFF | #1E1E1E |
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7600f72e-7c31-4bbf-bb71-2d8deb97b482" alt="imagen" width="400">
+</p>
+
+
+
 ### Colores ESCOM Azul
 
 | Elemento | Claro | Oscuro |
@@ -189,6 +195,10 @@ lib/
 | Fondo | #FFFFFF | #121212 |
 | Superficie | #FFFFFF | #1E1E1E |
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2d375eda-b2b5-412f-94fc-3da3b8fafc14" alt="imagen2" width="400">
+</p>
+
 ---
 
 ## 📱 Capturas de Pantalla
@@ -197,20 +207,37 @@ lib/
 - Explorador de archivos con vista de lista/cuadrícula
 - Barra de navegación con breadcrumbs
 - Acceso rápido a favoritos y recientes
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d03df017-bcfb-4fb4-b9ed-923cff43c760" alt="imagen3" width="400">
+</p>
 
 ### Búsqueda Avanzada
 - Campo de búsqueda con sugerencias
 - Filtros por tipo y fecha
-- Resultados en tiempo real
 
-### Visores
-- Visor de texto con ajuste de fuente
-- Visor de imágenes con zoom y rotación
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0293042b-5dfc-447e-b540-d2e60b301594" width="200">
+  <img src="https://github.com/user-attachments/assets/4dd083a7-d7d8-4721-9013-b2b3ba19c4eb" width="200">
+</p>
+
+### Favoritos y Recientes
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/40536584-f776-4d69-b63b-50cf8df8eb82" width="300">
+  <img src="https://github.com/user-attachments/assets/8c704318-797e-43d6-ba08-d6d81a12d583" width="300">
+</p>
+
+
 
 ### Gestión de Archivos
 - Opciones contextuales (copiar, mover, eliminar)
 - Diálogos de confirmación
 - Mensajes de retroalimentación
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6331f975-f10f-4d1e-a4e2-e9820a279637" alt="imagen" width="400">
+</p>
+
+
+### Video
 
 ---
 
